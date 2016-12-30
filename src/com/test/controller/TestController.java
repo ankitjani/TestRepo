@@ -18,6 +18,9 @@ public class TestController {
 		System.out.println("Hello World!");
 		int a = 10;
 		
+		int b,c,d,e;
+		System.out.println("test ");
+		
 	}
 
 }
