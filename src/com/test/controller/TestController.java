@@ -18,9 +18,8 @@ public class TestController {
 		System.out.println("Hello World!");
 		int a = 10;
 		
-		int b,c,d,e;
-		System.out.println("test ");
-		
+		String test = "This is test string";
+		System.out.println("a is ==> " + a + " and test is ==> " + test);
 	}
 
 }
