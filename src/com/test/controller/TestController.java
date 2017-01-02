@@ -35,17 +35,17 @@ public class TestController {
 		Result result = JUnitCore.runClasses(TestController.class);
 		
 	      for (Failure failure : result.getFailures()) {
-	         System.out.println(failure.toString());
+	         System.out.println("In for loop ==> " + failure.toString());
 	      }
 			
-	      System.out.println(result.wasSuccessful());
+	      System.out.println("After for loop ==> " + result.wasSuccessful());
 		
 		testController.test1();
 		
 	}
 	
 	@Test
-	private void test1(){
+	public void test1(){
 		System.out.println("This is test method.");
 	}
 
