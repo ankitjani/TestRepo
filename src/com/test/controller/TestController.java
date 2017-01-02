@@ -4,6 +4,10 @@
 package com.test.controller;
 
 import org.junit.Test;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.RunWith;
+import org.junit.runner.notification.Failure;
 
 /**
  * @author ankit
@@ -27,6 +31,15 @@ public class TestController {
 		System.out.println("This is the Latest Two.");
 		
 		TestController testController = new TestController();
+		
+		Result result = JUnitCore.runClasses(TestController.class);
+		
+	      for (Failure failure : result.getFailures()) {
+	         System.out.println(failure.toString());
+	      }
+			
+	      System.out.println(result.wasSuccessful());
+		
 		testController.test1();
 		
 	}
