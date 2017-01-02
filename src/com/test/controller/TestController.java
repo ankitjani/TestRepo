@@ -3,6 +3,8 @@
  */
 package com.test.controller;
 
+import org.junit.Test;
+
 /**
  * @author ankit
  *
@@ -23,6 +25,15 @@ public class TestController {
 		System.out.println("This is the Latest.");
 		System.out.println("This is the Latest One.");
 		System.out.println("This is the Latest Two.");
+		
+		TestController testController = new TestController();
+		testController.test1();
+		
+	}
+	
+	@Test
+	private void test1(){
+		System.out.println("This is test method.");
 	}
 
 }
