@@ -21,6 +21,8 @@ public class TestController {
 		System.out.println("a is ==> " + a + " and test is ==> " + test);
 		
 		System.out.println("This is the Latest.");
+		System.out.println("This is the Latest One.");
+		System.out.println("This is the Latest Two.");
 	}
 
 }
